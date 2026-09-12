@@ -108,3 +108,12 @@ captures the upward drift in lap time as tires age — something the baseline mo
 - Stint visualization plot — produced inline and saved as `stint_prediction_plot.png`
   (section 10)
 - `README.md` — this file
+## Reproducibility
+
+The Random Forest model uses a fixed random seed for reproducibility.
+
+- `random_state = 42`
+- `n_estimators = 300`
+- `max_depth = 6`
+
+Using a fixed `random_state` ensures that the Random Forest produces consistent results when the same dataset and dependency versions are used.
